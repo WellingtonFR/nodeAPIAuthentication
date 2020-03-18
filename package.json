@@ -1,10 +1,10 @@
 {
   "name": "nodeapiauthentication",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +12,17 @@
     "bcrypt": "^4.0.1",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.5"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WellingtonFR/nodeAPIAuthentication.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WellingtonFR/nodeAPIAuthentication/issues"
+  },
+  "homepage": "https://github.com/WellingtonFR/nodeAPIAuthentication#readme",
+  "description": ""
 }
