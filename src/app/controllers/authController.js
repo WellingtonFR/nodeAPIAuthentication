@@ -54,11 +54,10 @@ router.post('/forgot_password', async (req, res) => {
             to: email,
             from: 'gbwellington@hotmail.com',
             template: 'auth/forgot_password',
-            partialsDir: 'auth/forgot_password',
-            layoutsDir: 'auth/forgot_password',
             context: { token }
         }, (err) => {
             if (err) {
+                console.log(err)
                 return res.status(400).send({ error: 'Error on password, try again' })
             }
         })
